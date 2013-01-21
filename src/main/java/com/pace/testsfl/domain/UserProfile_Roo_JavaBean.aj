@@ -16,4 +16,12 @@ privileged aspect UserProfile_Roo_JavaBean {
         this.account = account;
     }
     
+    public String UserProfile.getUserName() {
+        return this.userName;
+    }
+    
+    public void UserProfile.setUserName(String userName) {
+        this.userName = userName;
+    }
+    
 }

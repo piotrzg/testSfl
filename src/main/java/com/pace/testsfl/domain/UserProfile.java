@@ -14,4 +14,7 @@ public class UserProfile {
     @NotNull
     @OneToOne
     private Account account;
+
+    @NotNull
+    private String userName;
 }
