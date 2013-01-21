@@ -20,3 +20,36 @@ field string --fieldName userName --notNull
 repository mongo --interface ~.repository.UserProfileRepository --entity ~.domain.UserProfile
 quit
 // Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-01-20 23:23:47
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-01-20 23:25:48
+service --interface ~.service.UserProfileService --entity ~.domain.UserProfile
+web mvc setup
+web mvc all --package ~.web
+quit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-01-20 23:27:17
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-01-20 23:35:23
+web flow 
+web flow --flowName rejestracja
+quit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-01-20 23:40:21
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-01-20 23:53:18
+service --interface ~.service.AccountService --entity ~.domain.Account
+quit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-01-20 23:54:20
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-01-20 23:57:40
+focus --class ~.domain.Account
+field string --fieldName username --sizeMax 40 --sizeMin 6 --notNull 
+field string --fieldName password --sizeMax 40 --sizeMin 6 --notNull 
+quit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-01-21 00:13:07
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-01-21 01:17:17
+// [failed] repository mongo --interface ~.repository.AccountRepository --entity ~.domain.Account
+repository mongo --interface ~.repository.AccountRepository --entity ~.domain.Account
+quit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-01-21 01:19:46
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-01-21 01:49:06
+quit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-01-21 01:49:53
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-01-21 01:49:57
+service --interface ~.service.AccountService --entity ~.domain.Account
+quit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-01-21 01:51:43
